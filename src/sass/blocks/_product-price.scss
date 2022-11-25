@@ -1,0 +1,8 @@
+.product-price {
+    border: 0.0625rem solid $blue;
+    background-color: $light-blue;
+    padding: 0.9375rem;
+    &__value {
+        margin-bottom: 0.9375rem;
+    }
+}

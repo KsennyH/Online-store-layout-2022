@@ -1,0 +1,75 @@
+.card-top {
+    display: grid;
+    grid-template-rows: 2fr 1fr auto;
+    padding: 0.625rem;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12.5rem;
+        height: 12.5rem;
+        margin: 0 auto 0.9375rem;
+        scale: 0.9;
+        transition: scale 0.5s ease;
+        img {
+            height: 12.5rem;
+            object-fit: contain;
+        }
+        &:hover {
+            scale: 1;
+        }
+    }
+    &__link {
+        text-decoration: underline;
+        margin-bottom: 1.5625rem;
+        transition: color .5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $blue;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+    }
+    &__stars {
+        margin-right: 0.3125rem;
+    }
+    &__icon {
+        path {
+            fill: $gray;
+        }
+        &.active {
+            path {
+                fill: $yellow;
+            }
+        }
+    }
+    &__rating-number {
+        color: $gray;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #000;
+        }
+    }
+    &__stock {
+        font-size: 0.875rem;
+        color: $green;
+        &--false {
+            color: $red;
+        }
+    }
+}

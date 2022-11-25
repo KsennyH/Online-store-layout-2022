@@ -1,0 +1,25 @@
+.view-sorting {
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:last-child) {
+            margin-right: 0.3125rem;
+        }
+        &[href]:hover,
+        &[href]:focus,
+        &[href]:active {
+            .view-sorting__icon rect {
+                fill: $blue;
+            }
+        }
+    }
+    &__link--active {
+        .view-sorting__icon rect {
+            fill: $blue;
+        }
+    }
+    &__icon rect {
+        fill: #5D5E5F;
+    }
+}

@@ -1,0 +1,92 @@
+.line-card {
+    border: 0.0625rem solid $blue;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 0 auto;
+        scale: 0.9;
+        transition: scale 0.5s ease;
+        img {
+            height: 11.25rem;
+            object-fit: contain;
+        }
+        &:hover {
+            scale: 1;
+        }
+    }
+    &__info {
+        border-right: 0.0625rem solid $blue;
+        border-left: 0.0625rem solid $blue;
+        padding: 1.25rem;
+    }
+    &__link {
+        text-decoration: underline;
+        margin-bottom: 0.9375rem;
+        transition: color .5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $blue;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.9375rem;
+    }
+    &__stars {
+        margin-right: 0.3125rem;
+    }
+    &__icon
+        path {
+            fill: $gray;
+        }
+        .active {
+            path {
+                fill: $yellow;
+            }
+        }
+    &
+    &__rating-number {
+        color: $gray;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #000;
+        }
+    }
+    &__stock {
+        font-size: 0.875rem;
+        color: $green;
+        &--false {
+            color: $red;
+        }
+    }
+    &__price {
+        background-color: $light-blue;
+        padding: 1.25rem;
+    }
+    &__price-false {
+        font-size: 0.875rem;
+        text-decoration: line-through;
+    }
+    &__inner {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}

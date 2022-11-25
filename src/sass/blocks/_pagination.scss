@@ -1,0 +1,42 @@
+.pagination {
+    font-family: 'Kurale', serif;
+    font-size: 1.125rem;
+    padding: 1.875rem 0;
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        align-items: baseline;
+        color: #fff;
+        margin: 0 0.625rem;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 0.3125rem;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: $blue;
+        border: 0.0625rem solid transparent;
+        border-radius: 0.1875rem;
+        padding: 0.3125rem; 
+        transition: color .5s ease, background-color .5s ease, border-color .5s ease;
+        &--active,
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #fff;
+            border-color: $blue;
+            color: $blue;
+        }
+    }
+}

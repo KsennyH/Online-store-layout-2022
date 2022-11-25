@@ -1,0 +1,39 @@
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9375rem 0;
+    &__article {
+        color: $gray;
+        font-size: 0.875rem;
+        margin-bottom: 0.625rem;
+    }
+    &__stock {
+        color: $green;
+        font-size: 0.875rem;
+    }
+    &__stars {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 0.3125rem;
+        path {
+            fill: $gray;
+        }
+        &.active {
+            path {
+                fill: $yellow;
+            }
+        }
+    }
+    &__number {
+        color: $gray;
+        transition: color .5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #000;
+        }
+    }
+}

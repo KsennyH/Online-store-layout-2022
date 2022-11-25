@@ -1,0 +1,46 @@
+.payment {
+    line-height: 1.5;
+    &__subtitle,
+    &__delivery-title {
+        font-weight: 700;
+        margin-bottom: 0.625rem;
+    }
+    &__list,
+    &__delivery-text,
+    &__delivery-list {
+        margin-bottom: 0.625rem;
+    }
+    &__text {
+        margin-bottom: 1.875rem;
+    }
+    &__courier {
+        line-height: 1.5;
+    }
+    &__list,
+    &__delivery-list {
+        padding-left: 1.875rem;
+    }
+    &__item,
+    &__delivery-item {
+        position: relative;
+        padding-left: 1.25rem;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/check.svg);
+            background-repeat: no-repeat;
+            width: 0.4375rem;
+            height: 0.4375rem;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__item + &__item,
+    &__delivery-item + &__delivery-item {
+        margin-top: 0.625rem;
+    }
+    &__delivery-address {
+        font-weight: 500;
+    }
+}

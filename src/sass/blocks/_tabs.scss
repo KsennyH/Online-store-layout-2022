@@ -1,0 +1,11 @@
+.tabs {
+    &__item {
+        border: 0.0625rem solid $blue;
+        border-top: 0;
+        padding: 0.9375rem;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

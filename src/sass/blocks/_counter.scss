@@ -1,0 +1,38 @@
+.counter {
+    &__wrapper {
+        display: flex;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: $blue;
+        border: 0.0625rem solid transparent;
+        border-radius: 0.1875rem;
+        padding: 0.3125rem;
+        transition: color .5s ease, background-color .5s ease, border .5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $blue;
+            background-color: #fff;
+            border: 0.0625rem solid $blue;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 0.0625rem solid $blue;
+        max-width: 5rem;
+        height: 1.875rem;
+        padding: 0.3125rem;
+        margin: 0 0.3125rem;
+    }
+}

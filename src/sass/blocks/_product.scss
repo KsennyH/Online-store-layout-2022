@@ -1,0 +1,16 @@
+.product {
+    &__title {
+        margin-bottom: 0.9375rem;
+    }
+    &__wrapper {
+        display: flex;
+        border: 0.0625rem solid $blue;
+    }
+    &__slider {
+        width: 60%;
+        flex-shrink: 0;
+    }
+    &__info {
+        width: 40%;
+    }
+}

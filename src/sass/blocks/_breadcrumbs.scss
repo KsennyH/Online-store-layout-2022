@@ -1,0 +1,46 @@
+.breadcrumbs {
+    padding-bottom: 1.125rem;
+    &__list {
+        display: flex;
+        align-items: baseline;
+        padding: 0 0 0.9375rem 0;
+    }
+    &__item:not(:last-child) {
+        position: relative;
+        padding-right: 1.5625rem;
+        margin-right: 0.9375rem;
+        &::after {
+            content: "/";
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__link[href] {
+        text-decoration: underline;
+        transition: color .5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $blue;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: baseline;
+        padding: 0.9375rem 0;
+    }
+    &__btn {
+        font-size: inherit;
+        color: $blue;
+        text-decoration: underline;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+        &:not(:last-child) {
+            margin-right: 3.125rem;
+        }
+    }
+}

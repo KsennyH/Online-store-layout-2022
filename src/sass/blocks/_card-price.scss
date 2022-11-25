@@ -1,0 +1,17 @@
+.card-price {
+    background-color: $light-blue;
+    border-top: 0.0625rem solid $blue;
+    padding: 0.625rem;
+    &__false {
+        font-size: 0.875rem;
+        text-decoration: line-through;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        font-size: 1.125rem;
+    }
+}

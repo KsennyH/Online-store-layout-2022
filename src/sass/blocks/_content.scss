@@ -1,0 +1,22 @@
+.content {
+    &__slider,
+    &__bestsellers,
+    &__text,
+    &__product-card,
+    &__descr {
+        margin-bottom: 3.125rem;
+    }
+    &__cart {
+        margin-bottom: 1.25rem;
+    }
+    &__text {
+        line-height: 1.5;
+        p + p {
+            margin-top: 0.625rem;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 0.9375rem;
+    }
+}

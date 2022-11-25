@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('./chunk/head.html')
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                @@include('./chunk/header-top.html')
+                <nav class="header__nav nav">
+                    <div class="nav__wrapper">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Гарантия и сервис</a></li>
+                            <li class="nav__item"><a class="nav__link" href="sales.html">Акции и скидки</a></li>
+                        </ul>
+                        <div class="nav__search">
+                            <form action="/" class="search">
+                                <input type="text" class="search__input" placeholder="Искать на сайте">
+                                <button class="search__button" aria-label="Кнопка поиска">
+                                    <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;" xml:space="preserve">                                            <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75    S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5    C102,280.5,51,229.5,51,165.75S102,51,165.75,51S280.5,102,280.5,165.75S229.5,280.5,165.75,280.5z" fill="#407cc0"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            
+            <div class="main-page">
+                <div class="container">
+                    <div class="main-page__wrapper">
+                        @@include('./chunk/aside.html')
+                        <div class="main-page__content content">
+
+                            <div class="content__breadcrumbs breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link">Корзина</a></li>
+                                </ul>
+                            </div>
+
+                            <section class="content__cart cart-product">
+                                <h2 class="cart-product__title title">Корзина</h2>
+                                <form class="cart-product__form">
+                                    <div class="cart-product__wrapper">
+                                        <div class="cart-product__img">
+                                            <img src="img/1.jpg" alt="Телескоп Sky-Watcher BK 709EQ2">
+                                        </div>
+                                        <h1 class="cart-product__subtitle">Телескоп Sky-Watcher BK 709EQ2</h1>
+                                        <div class="cart-product__info">
+                                            <div class="cart-product__counter counter">
+                                                <div class="counter__wrapper">
+                                                    <button class="counter__btn counter__btn--minus">-</button>
+                                                    <input  class="counter__input" type="number" value="1">
+                                                    <button class="counter__btn counter__btn--plus">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="cart-product__price">15 500 руб.</div>
+                                        </div>
+                                        <div class="cart-product__close-btn"></div>
+                                    </div>
+                                    <div class="cart-product__sales ticket">
+                                        <div class="ticket__wrapper">
+                                            <form action="/" class="ticket__form">
+                                                <p class="ticket__text">Купон на скидку:</p>
+                                                <input class="ticket__input" type="text">
+                                                <button class="ticket__btn btn" type="submit">Применить</button>
+                                            </form>
+                                            <div class="ticket__sale">
+                                                <p class="ticket__sale-text">Скидка:</p>
+                                                <p class="ticket__sale-minus">-0 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__actions">
+                                        <button class="btn btn--big">Оформить заказ</button>
+                                        <a class="cart-product__link" href="#">Вернуться на главную</a>
+                                    </div>
+                                </form>
+                            </section>
+
+                            <section class="content__similar bestsellers">
+                                <h2 class="bestsellers__title title">С этим товаром покупают</h2>
+                                <div class="bestsellers__slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <article class="products__card card">
+                                                <div class="card__top card-top">
+                                                    <div class="card-top__img">
+                                                        <img class="card-top__image" src="img/5sale.png" alt="Экстендер Explore Scientific">
+                                                    </div>
+                                                    <a class="card-top__link" href="#">
+                                                        <h3 class="card-top__title">Экстендер Explore Scientific 2x, 2"</h3>
+                                                    </a>
+                                                    <div class="card-top__info">
+                                                        <div class="card-top__rating">
+                                                            <div class="card-top__stars">
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                            </div>
+                                                            <a class="card-top__rating-number" href="#">(0)</a>
+                                                        </div>
+                                                        <p class="card-top__stock">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__bottom card-price">
+                                                    <div class="card-price__false">14 520 руб.</div>
+                                                    <div class="card-price__wrapper">
+                                                        <div class="card-price__text">13 500 руб.</div>
+                                                        <button class="card-price__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="products__card card">
+                                                <div class="card__top card-top">
+                                                    <div class="card-top__img">
+                                                        <img class="card-top__image" src="img/6sale.jpg" alt="Окуляр Baader Planetarium Hyperion">
+                                                    </div>
+                                                    <a class="card-top__link" href="#">
+                                                        <h3 class="card-top__title">Окуляр Baader Planetarium Hyperion 8 мм, 1,25"-2"</h3>
+                                                    </a>
+                                                    <div class="card-top__info">
+                                                        <div class="card-top__rating">
+                                                            <div class="card-top__stars">
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                            </div>
+                                                            <a class="card-top__rating-number" href="#">(5)</a>
+                                                        </div>
+                                                        <p class="card-top__stock card-top__stock--false">Под заказ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__bottom card-price">
+                                                    <div class="card-price__false">9 740 руб.</div>
+                                                    <div class="card-price__wrapper">
+                                                        <div class="card-price__text">8 999 руб.</div>
+                                                        <button class="card-price__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="products__card card">
+                                                <div class="card__top card-top">
+                                                    <div class="card-top__img">
+                                                        <img class="card-top__image" src="img/7sale.jpg" alt="Фильтр Baader Planetarium IR">
+                                                    </div>
+                                                    <a class="card-top__link" href="#">
+                                                        <h3 class="card-top__title">Фильтр Baader Planetarium IR pass, 2"</h3>
+                                                    </a>
+                                                    <div class="card-top__info">
+                                                        <div class="card-top__rating">
+                                                            <div class="card-top__stars">
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                            </div>
+                                                            <a class="card-top__rating-number" href="#">(0)</a>
+                                                        </div>
+                                                        <p class="card-top__stock">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__bottom card-price">
+                                                    <div class="card-price__false">8 760 руб.</div>
+                                                    <div class="card-price__wrapper">
+                                                        <div class="card-price__text">7 550 руб.</div>
+                                                        <button class="card-price__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="products__card card">
+                                                <div class="card__top card-top">
+                                                    <div class="card-top__img">
+                                                        <img class="card-top__image" src="img/8sale.jpg" alt="Фильтр Baader Planetarium Contrast Booster">
+                                                    </div>
+                                                    <a class="card-top__link" href="#">
+                                                        <h3 class="card-top__title">Фильтр Baader Planetarium Contrast Booster, 2"</h3>
+                                                    </a>
+                                                    <div class="card-top__info">
+                                                        <div class="card-top__rating">
+                                                            <div class="card-top__stars">
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                                <svg class="card-top__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                                </svg>
+                                                            </div>
+                                                            <a class="card-top__rating-number" href="#">(2)</a>
+                                                        </div>
+                                                        <p class="card-top__stock">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card__bottom card-price">
+                                                    <div class="card-price__false">7 300 руб.</div>
+                                                    <div class="card-price__wrapper">
+                                                        <div class="card-price__text">6 500 руб.</div>
+                                                        <button class="card-price__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="bestsellers__buttons">
+                                        <div class="swiper-button-prev">
+                                            <svg class="bestsellers__btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="20px" height="20px">
+                                                <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" fill="#FFFFFF"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <svg class="bestsellers__btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="512px" height="512px">
+                                                <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" fill="#FFFFFF"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        @@include('./chunk/footer.html')
+    </div>
+    <script src="plagins/choices.min.js"></script>
+    <script src="plagins/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

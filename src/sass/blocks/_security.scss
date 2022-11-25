@@ -1,0 +1,35 @@
+.security {
+    line-height: 1.5;
+    &__subtitle,
+    &__repair {
+        font-weight: 700;
+        margin-bottom: 0.625rem;
+    }
+    &__text {
+        margin-bottom: 0.9375rem;
+        p + p {
+            margin-top: 0.625rem;
+        }
+    }
+    ul {
+        padding-left: 1.875rem;
+    }
+    li {
+        position: relative;
+        padding-left: 1.25rem;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/check.svg);
+            background-repeat: no-repeat;
+            width: 0.4375rem;
+            height: 0.4375rem;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    li + li {
+        margin-top: 0.625rem;
+    }
+}

@@ -1,0 +1,41 @@
+.card {
+    border: 0.0625rem solid $blue;
+    min-height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    &:hover,
+    &:focus,
+    &:active {
+        .card-top__link {
+            color: $blue;    
+        }
+    } 
+    &--new {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/new-icon.svg);
+            background-repeat: no-repeat;
+            width: 3.125rem;
+            height: 3.125rem;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+    }
+    &--sale {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/sale.svg);
+            background-repeat: no-repeat;
+            width: 3.125rem;
+            height: 3.125rem;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.ticket {
+    background-color: $light-blue;
+    padding: 0.625rem 0.9375rem;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        margin-right: 0.9375rem;
+    }
+    &__input {
+        border: 0.0625rem solid $blue;
+        height: 1.875rem;
+        max-width: 9.375rem;
+        padding: 0.3125rem 0.625rem;
+        margin-right: 0.9375rem;
+    }
+    &__sale {
+        display: flex;
+        align-items: center;
+        margin-right: 3.75rem;
+        margin-left: auto;
+    }
+    &__sale-text {
+        margin-right: 0.9375rem;
+    }
+}

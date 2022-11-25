@@ -1,0 +1,24 @@
+.buttons {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__favorites,
+    &__compare {
+        color: $gray;
+        font-size: 0.875rem;
+        text-decoration: underline;
+        transition: color 0.5s ease;
+        &:hover {
+            color: $blue;
+        }
+    }
+    &__favorites {
+        margin-bottom: 0.625rem;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

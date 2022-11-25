@@ -1,0 +1,9 @@
+.footer {
+    font-family: 'Kurale', serif;
+    font-size: 1.125rem;
+    background-color: $light-blue;
+    padding: 1.5625rem 0;
+    &__copy {
+        text-align: center;
+    }
+}

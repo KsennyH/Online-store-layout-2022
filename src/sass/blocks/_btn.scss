@@ -1,0 +1,26 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kurale', serif;
+    font-size: 1rem;
+    background-color: $blue;
+    border: 0.0625rem solid transparent;
+    color: #fff;
+    padding: 0.3125rem 0.9375rem;
+    border-radius: 0.3125rem;
+    min-height: 1.875rem;
+    transition: background-color .5s ease, color .5s ease;
+    &--big {
+        padding: 0.3125rem 2.1875rem;
+        min-height: 2.25rem;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #fff;
+        border-color: $blue;
+        color: $blue;
+    }
+}

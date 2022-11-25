@@ -1,0 +1,15 @@
+.main-page {
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__filter {
+        flex: 0 0 20%;
+        margin-right: 1%;
+        margin-bottom: 0.625rem;
+    }
+    &__content {
+        min-width: 0;
+        max-width: 1080px;
+    }
+}

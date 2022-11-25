@@ -1,0 +1,34 @@
+.type-block {
+    &__button {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+        border-bottom: 0.0625rem solid $blue;
+    }
+    &__title {
+        padding: 0.9375rem 0.625rem;
+    }
+    &__icon {
+        transform: rotate(180deg);
+        &.open {
+            transform: rotate(0);
+        }
+    }
+    &__list {
+        display: none;
+        border-bottom: 0.0625rem solid $blue;
+        padding: 0.625rem 1.25rem;
+        &.show {
+            display: block;
+        }
+    }
+    &__link {
+        color: $blue;
+        padding: 0.625rem;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.main-slider {
+    color: #fff;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__slide {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 28.125rem;
+        padding: 3.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        flex: 0 1 58%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Kurale', serif;
+        font-size: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 1.875rem;
+        p + p {
+            margin-top: 0.625rem;
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9375rem;
+        width: 20.625rem;
+        height: 20.625rem;
+        background-color: #fff;
+        border: 0.1875rem solid $blue;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/new.svg);
+            background-repeat: no-repeat;
+            width: 5rem;
+            height: 5rem;
+            top: -1.25rem;
+            left: -0.9375rem;
+        }
+        img {
+            height: 16.875rem;
+            object-fit: contain;
+        }
+    }
+}
+
+.main-slider__telescopes .swiper-button-prev::after,
+.main-slider__telescopes .swiper-button-next::after {
+    display: none;
+}
+
+.main-slider__telescopes .swiper-button-next {
+    right: 1.25rem;
+}
+
+.main-slider__telescopes .swiper-button-prev {
+    left: 1.25rem;
+}
+
+.main-slider__telescopes .swiper-pagination-bullet {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border: 0.1875rem solid $blue;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.main-slider__telescopes .swiper-pagination-bullet-active {
+    background-color: $blue;
+}
+
+.main-slider__telescopes .swiper-pagination-bullets {
+    bottom: 1.25rem;
+}
+
+
+
+
+
+

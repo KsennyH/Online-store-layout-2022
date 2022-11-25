@@ -1,0 +1,18 @@
+.sorting {
+    font-family: 'Kurale', serif;
+    font-size: 1.125rem;
+    border: 0.0625rem solid $blue;
+    background-color: $light-blue;
+    padding: 0.9375rem 0.625rem;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__pages {
+        margin-left: auto;
+    }
+    &__view {
+        margin-left: 3.75rem;
+    }
+}

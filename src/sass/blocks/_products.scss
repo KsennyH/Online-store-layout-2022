@@ -1,0 +1,15 @@
+.products {
+    padding: 1.875rem 0 0 0;
+    &__title {
+        margin-bottom: 0.9375rem;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -0.625rem;
+    }
+    &__item {
+        flex: 1 0 25%;
+        padding: 0.625rem;
+    }
+}

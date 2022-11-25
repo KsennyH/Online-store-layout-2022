@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('./chunk/head.html')
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                @@include('./chunk/header-top.html')
+                <nav class="header__nav nav">
+                    <div class="nav__wrapper">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link nav__link--active">Каталог</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Гарантия и сервис</a></li>
+                            <li class="nav__item"><a class="nav__link" href="sales.html">Акции и скидки</a></li>
+                        </ul>
+                        <div class="nav__search">
+                            <form action="/" class="search">
+                                <input type="text" class="search__input" placeholder="Искать на сайте">
+                                <button class="search__button" aria-label="Кнопка поиска">
+                                    <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;" xml:space="preserve">                                            <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75    S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5    C102,280.5,51,229.5,51,165.75S102,51,165.75,51S280.5,102,280.5,165.75S229.5,280.5,165.75,280.5z" fill="#407cc0"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            
+            <div class="main-page">
+                <div class="container">
+                    <div class="main-page__wrapper">
+                        @@include('./chunk/aside.html')
+                        <div class="main-page__content content">
+
+                            <div class="content__breadcrumbs breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link">Телескопы</a></li>
+                                </ul>
+                                <div class="breadcrumbs__btns">
+                                    <button class="breadcrumbs__btn" type="button">Levenhuk</button>
+                                    <button class="breadcrumbs__btn" type="button">Synta</button>
+                                    <button class="breadcrumbs__btn" type="button">Sky-Watcher</button>
+                                    <button class="breadcrumbs__btn" type="button">Celestron</button>
+                                </div>
+                            </div>
+
+                            <div class="content__sorting sorting">
+                                <div class="sorting__wrapper">
+                                    <div class="sorting__type type-sorting">
+                                        <div class="type-sorting__wrapper type-select">
+                                            <p class="type-sorting__title">Сортировать:</p>
+                                            <select class="select js-type" name="type-sorting" aria-label="Сортировка">
+                                                <option value="high-price">По цене</option>
+                                                <option value="low-price">По алфавиту</option>
+                                                <option value="popular">Популярные</option>
+                                                <option value="new">Новинки</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="sorting__pages type-sorting">
+                                        <div class="type-sorting__wrapper price-select">
+                                            <p class="type-sorting__title">Показывать по:</p>
+                                            <select class="select js-value" name="value-sorting" aria-label="Сортировка">
+                                                <option value="12">12</option>
+                                                <option value="24">24</option>
+                                                <option value="48">48</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="sorting__view view-sorting">
+                                        <a class="view-sorting__link" href="sales.html">
+                                            <svg class="view-sorting__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="5" height="5" rx="1"/>
+                                                <rect y="6" width="5" height="5" rx="1"/>
+                                                <rect y="12" width="5" height="5" rx="1"/>
+                                                <rect x="6" width="5" height="5" rx="1"/>
+                                                <rect x="6" y="6" width="5" height="5" rx="1"/>
+                                                <rect x="6" y="12" width="5" height="5" rx="1"/>
+                                                <rect x="12" width="5" height="5" rx="1"/>
+                                                <rect x="12" y="6" width="5" height="5" rx="1"/>
+                                                <rect x="12" y="12" width="5" height="5" rx="1"/>
+                                            </svg>
+                                        </a>
+                                        <a class="view-sorting__link view-sorting__link--active">
+                                            <svg class="view-sorting__icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="5" height="5" rx="1"/>
+                                                <rect y="6" width="5" height="5" rx="1"/>
+                                                <rect y="12" width="5" height="5" rx="1"/>
+                                                <rect x="6" width="15" height="5" rx="1"/>
+                                                <rect x="6" y="6" width="15" height="5" rx="1"/>
+                                                <rect x="6" y="12" width="15" height="5" rx="1"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="content__catalog products-line-view">
+                                <h2 class="products-line-view__title title">Товары со скидкой</h2>
+                                <ul class="products-line-view__list">
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/1sale.jpg" alt="Телескоп Sky-Watcher Star Discovery P130 SynScan GOTO">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Sky-Watcher Star Discovery P130 SynScan GOTO</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">43 830 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">35 500 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/2sale.jpg" alt="Телескоп Levenhuk Skyline PRO 105 MAK">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Levenhuk Skyline PRO 105 MAK</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">35 060 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">30 350 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/3sale.jpg" alt="Телескоп Celestron Cosmos 90 GT Wi-Fi">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Celestron Cosmos 90 GT Wi-Fi</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(1)</a>
+                                                    </div>
+                                                    <p class="line-card__stock line-card__stock--false">Под заказ</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">34 990 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">29 990 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/4sale.jpg" alt="Телескоп Celestron Omni XLT 114 AZ">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Celestron Omni XLT 114 AZ</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(13)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">20 450 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">18 700 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/5sale.png" alt="Экстендер Explore Scientific">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Экстендер Explore Scientific 2x, 2"</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">14 520 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">13 500 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/6sale.jpg" alt="Окуляр Baader Planetarium Hyperion">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Окуляр Baader Planetarium Hyperion 8 мм, 1,25"-2"</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(5)</a>
+                                                    </div>
+                                                    <p class="line-card__stock line-card__stock--false">Под заказ</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">9 740 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">8 999 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/7sale.jpg" alt="Фильтр Baader Planetarium IR pass">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Фильтр Baader Planetarium IR pass, 2"</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">8 760 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">7 550 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/8sale.jpg" alt="Фильтр Baader Planetarium Contrast Booster">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Фильтр Baader Planetarium Contrast Booster, 2"</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon active" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(2)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">7 300 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">6 500 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/9sale.jpg" alt="Wi-Fi-адаптер Scope-Fi">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Wi-Fi-адаптер Scope-Fi</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">6 770 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">6 000 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/10sale.jpg" alt="L-кронштейн крепежный">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">L-кронштейн крепежный 1/4" Sky-Watcher</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">4 280 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">3 550 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/11sale.jpg" alt="Телескоп Levenhuk LabZZ T1">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Levenhuk LabZZ T1</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">2 720 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">1 999 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="products-line-view__item">
+                                        <article class="products-line-view__card line-card">
+                                            <div class="line-card__wrapper">
+                                                <div class="line-card__img">
+                                                    <img class="line-card__image" src="img/12sale.jpg" alt="Телескоп Celestron Land and Sky 50 TT">
+                                                </div>
+                                                <div class="line-card__info">
+                                                    <a class="line-card__link" href="#">
+                                                        <h3 class="line-card__title">Телескоп Celestron Land and Sky 50 TT</h3>
+                                                    </a>
+                                                    <div class="line-card__rating">
+                                                        <div class="line-card__stars">
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                            <svg class="line-card__icon" width="20" height="20" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z" fill="#EBE32E"/>
+                                                            </svg>
+                                                        </div>
+                                                        <a class="line-card__rating-number" href="#">(0)</a>
+                                                    </div>
+                                                    <p class="line-card__stock">В наличии</p>
+                                                </div>
+                                                <div class="line-card__price">
+                                                    <div class="line-card__price-false">2 720 руб.</div>
+                                                    <div class="line-card__inner">
+                                                        <div class="line-card__text">1 550 руб.</div>
+                                                        <button class="line-card__btn btn">Купить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            @@include('./chunk/pagination.html')
+
+                            <div class="content__text">
+                                <h1 class="content__title title">Добро пожаловать в интернет-магазин телескопов <span class="uppercase">"Astronaut"!</span></h1>
+                                <p>
+                                    Наблюдения звёздного неба - это лучший способ прикоснуться к загадочным космическим объектам! Вы можете приобрести 
+                                    любительский телескоп и своими глазами увидеть удивительные небесные светила, которые с давних времен завораживали всех 
+                                    людей. Любой инструмент способен показать Вам невероятное количество объектов, которые не доступны невооруженному глазу - 
+                                    объекты Солнечной системы (Луна, планеты, Солнце и кометы), звёздные скопления, туманности и далекие галактики. 
+                                </p>
+                                <p>
+                                    Телескопы - это оптические инструменты, применяемые для увеличения видимых размеров небесных светил и для увеличения 
+                                    плотности энергии, поступающей от небесных светил, и направления ее в приемники излучения или для визуального изучения. 
+                                </p>
+                                <p>
+                                    В магазинах можно купить телескоп следующих оптических типов: линзовые , зеркальные и зеркально-линзовые. 
+                                    У каждой из этих систем есть свои преимущества и недостатки, но можно смело сказать, что в каждом телескопе 
+                                    будет видно огромное число завораживающих небесных объектов!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        @@include('./chunk/footer.html')
+    </div>
+    <script src="plagins/choices.min.js"></script>
+    <script src="plagins/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

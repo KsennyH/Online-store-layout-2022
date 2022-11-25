@@ -1,0 +1,11 @@
+.filter {
+    &__buttons {
+        text-align: center;
+        border: 0.0625rem solid $blue;
+        border-top: 0;
+        padding: 0.9375rem 0.625rem;
+    }
+    &__btn {
+        margin-bottom: 0.9375rem;
+    }
+}

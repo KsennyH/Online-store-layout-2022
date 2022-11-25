@@ -1,0 +1,26 @@
+.comments {
+    line-height: 1.5;
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__item-name {
+        margin-bottom: 0.625rem;
+    }
+    &__item-icon {
+        path {
+            fill: $gray;
+        }
+        &.active {
+            path {
+                fill: $yellow;
+            }
+        }
+    }
+    &__title {
+        font-weight: 500;
+    }
+    &__item + &__item {
+        margin-top: 1.25rem;
+    }
+}

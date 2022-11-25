@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('./chunk/head.html')
+<body>
+    <div class="wrapper">
+        
+        <header class="header">
+            <div class="container">
+                @@include('./chunk/header-top.html')
+                <nav class="header__nav nav">
+                    <div class="nav__wrapper">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+                            <li class="nav__item"><a class="nav__link nav__link--active">Доставка и оплата</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Гарантия и сервис</a></li>
+                            <li class="nav__item"><a class="nav__link" href="sales.html">Акции и скидки</a></li>
+                        </ul>
+                        <div class="nav__search">
+                            <form action="/" class="search">
+                                <input type="text" class="search__input" placeholder="Искать на сайте">
+                                <button class="search__button" aria-label="Кнопка поиска">
+                                    <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;" xml:space="preserve">                                            <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75    S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5    C102,280.5,51,229.5,51,165.75S102,51,165.75,51S280.5,102,280.5,165.75S229.5,280.5,165.75,280.5z" fill="#407cc0"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            
+            <div class="main-page">
+                <div class="container">
+                    <div class="main-page__wrapper">
+                        @@include('./chunk/aside.html')
+                        <div class="main-page__content content">
+                            
+                            <div class="content__text">
+                                <h1 class="content__title title">Добро пожаловать в интернет-магазин телескопов <span class="uppercase">"Astronaut"!</span></h1>
+                                <p>Усли Вы искали где купить телескоп в Костроме, то лучше всего это сделать в нашем специализированном магазине.
+                                    Здесь Вы найдете широчайший выбор телескопов и принадлежностей к ним, литературы и других сопутствующих товаров, 
+                                    а также получите исчерпывающие и авторитетные консультации по любым вопросам, связанным с астрономией, которые дадут Вам наши консультанты.
+                                </p>
+                                <p>
+                                    Наш магазин предлагает широкий выбор телескопов различного уровня только от самых известных и проверенных производителей:
+                                    Celestron, Synta, Meade, Sky-Watcher, Levenhuk, Vixen. У нас можно приобрести телескоп любого уровня, на любой вкус и кошелек - от 
+                                    моделей для начинающих до самых больших и профессиональных телескопов. В нашем магазине Вам помогут подобрать не только сам 
+                                    телескоп, но и окуляры, линзы Барлоу, диагональные призмы, искатели, моторы, фокусеры, ПЗС-камеры и 
+                                    другие оптические приборы для наблюдений. Мы осуществляем продажу в Костромской и Ивановской областях с доставкой товара.
+                                </p>
+                            </div>
+
+                            <div class="content__payment payment">
+                                <h3 class="payment__subtitle">Способы оплаты</h3>
+                                <ul class="payment__list">
+                                    <li class="payment__item">Оплата наличными</li>
+                                    <li class="payment__item">Оплата банковской картой VISA, MASTERCARD, МИР</li>
+                                </ul>
+                                <p class="payment__text">После того как Вы осмотрели покупку и убедились, что все в порядке, Вы платите курьеру наличными или картой.</p>
+                                <h3 class="payment__delivery-title">Доставка</h3>
+                                <p class="payment__delivery-text">Забрать товар можно самостоятельно в любой день с 10:00 до 19:00 в пунктах выдачи:</p>
+                                <ul class="payment__delivery-list">
+                                    <li class="payment__delivery-item">
+                                        <address class="payment__delivery-address">Кострома, ул. Народная, д. 54</address>
+                                    </li>
+                                    <li class="payment__delivery-item">
+                                        <address class="payment__delivery-address">Иваново, ул. Ермака, д. 25, корпус 2</address>
+                                    </li>
+                                    <li class="payment__delivery-item">
+                                        <address class="payment__delivery-address">Волгореченск, ул. Текстильная, д. 18, 2 этаж</address>
+                                    </li>
+                                    <li class="payment__delivery-item">
+                                        <address class="payment__delivery-address">Приволжск, ул. Революционная, д. 21</address>
+                                    </li>
+                                </ul>
+                                <p class="payment__courier">Вы можете заказать доставку курьером. Заказ придёт в течение 5 дней. Стоимость доставки зависит от веса и габаритов заказа.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+        @@include('./chunk/footer.html')
+    </div>
+    <script src="plagins/choices.min.js"></script>
+    <script src="plagins/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
